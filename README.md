@@ -1,6 +1,6 @@
 # Parade::Preshow
 
-TODO: Write a gem description
+Adds a time configurable preshow to a Parade presentation, allowing you to present images before your presentation starts.
 
 ## Installation
 
@@ -18,7 +18,31 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Require it in your `parade` file:
+
+```ruby
+require 'parade-preshow'
+
+title "Example Presentation"
+
+description "My Awesome Presentation"
+
+section "Introduction" do
+  slides "intro.md"
+  slides "installation.md"
+  slides "navigation.md"
+end
+```
+
+Require it in your `config.ru` file:
+
+```ruby
+require "parade"
+require "parade-preshow"
+run Parade::Server.new
+```
+
+You can start the preshow by pressing the **p** key during your presentation
 
 ## Contributing
 
