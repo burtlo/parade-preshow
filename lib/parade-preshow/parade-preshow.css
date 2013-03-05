@@ -1,0 +1,17 @@
+#preshow { display: none; }
+
+#preshow_timer {
+  display:inline;
+  background-color:#000;
+  color:#fff;
+  font-size:3em;
+  border:2px solid black;
+  position: fixed;
+  padding:25px;
+  margin:0px;
+  z-index: 2147483647; /* max, see http://www.puidokas.com/max-z-index/ */
+}
+
+#preshow_timer {
+  bottom: 0px;
+}
