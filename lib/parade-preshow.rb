@@ -29,4 +29,5 @@ module Parade
   Server.register Preshow::Server
   Server.register_javascript Preshow.javascript_file
   Server.register_stylesheet Preshow.stylesheet_file
+  Server.register_command "p", "toggle preshow"
 end
